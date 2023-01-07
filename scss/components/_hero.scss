@@ -1,0 +1,63 @@
+.container {
+  margin: 0 auto;
+  max-width: 1500px;
+}
+
+.hero {
+  margin-block: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero_main_title {
+  h1 {
+    font-size: 45px;
+    font-weight: bold;
+  }
+
+  span {
+    font-size: 25px;
+    font-weight: 300;
+  }
+}
+
+iframe {
+  width: 100%;
+  max-width: 850px;
+  height: 500px;
+  margin-block: 30px 70px;
+}
+
+.hero_title {
+  width: 700px;
+  font-size: 30px;
+  line-height: 30px;
+  padding-bottom: 5px;
+  span {
+    color: $yellow;
+  }
+}
+
+p {
+  font-size: 21px;
+  font-weight: 300;
+}
+
+@media (max-width: 845px) {
+  iframe {
+    height: 420px;
+  }
+
+  .hero_title {
+    width: 100%;
+  }
+}
+
+@media (max-width: 430px) {
+  iframe {
+    height: 300px;
+  }
+}
