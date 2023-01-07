@@ -208,7 +208,7 @@ hr {
   background-color: #0d0d0d;
 }
 
-h3 {
+.cards_title {
   padding-top: 50px;
   font-size: 50px;
   font-weight: 500;
@@ -271,6 +271,110 @@ h3 {
     flex-direction: column;
     gap: 250px;
   }
+}
+.features {
+  padding: 150px 30px;
+}
+.features .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.features_title {
+  width: 700px;
+}
+.features_title h3 {
+  font-size: 42px;
+}
+.features_title h3 span {
+  font-weight: 400;
+}
+
+.features_section {
+  margin-top: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.features_card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.features_card p {
+  color: white;
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  transform: translateY(500%);
+  transition: 0.5s;
+}
+.features_card:hover p {
+  transform: translateY(0%);
+}
+
+.features_card:nth-child(2) {
+  background: url("/images/firewalking.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0px 0px 100px black;
+}
+
+.features_card:nth-child(1) {
+  background: url("/images/networking.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.features_card:nth-child(3) {
+  background: url("/images/mentoria.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0px 0px 100px black;
+}
+
+@media (max-width: 845px) {
+  .features_title {
+    width: 100%;
+  }
+}
+.footer {
+  background-image: url("/images/footer.png");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+}
+.footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 100px;
+}
+.footer img {
+  width: 200px;
+}
+.footer a {
+  color: white;
+  font-size: 25px;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=main.css.map */

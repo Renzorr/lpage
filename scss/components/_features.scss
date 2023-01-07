@@ -1,0 +1,83 @@
+.features {
+  padding: 150px 30px;
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.features_title {
+  width: 700px;
+  h3 {
+    font-size: 42px;
+
+    span {
+      font-weight: 400;
+    }
+  }
+}
+
+.features_section {
+  margin-top: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.features_card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+
+  p {
+    color: white;
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    transform: translateY(500%);
+    transition: 0.5s;
+  }
+
+  &:hover {
+    p {
+      transform: translateY(0%);
+    }
+  }
+}
+
+.features_card:nth-child(2) {
+  background: url("/images/firewalking.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0px 0px 100px black;
+}
+
+.features_card:nth-child(1) {
+  background: url("/images/networking.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.features_card:nth-child(3) {
+  background: url("/images/mentoria.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0px 0px 100px black;
+}
+
+@media (max-width: 845px) {
+  .features_title {
+    width: 100%;
+  }
+}
